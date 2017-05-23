@@ -2,16 +2,31 @@
 <html>
 <head>
   <title>Contact Us</title>
+	<link rel="stylesheet" href="restaurantstyles.css"/>
+	<style>
+		div {
+			align:center;
+			text-align:center
+		}
+ form{
+	 font-weight:bold; 
+	 color:darkslateblue
+ }
+	</style>
 </head>
-<body> 
-	<div align="center">
-	  <h1>Molecular</h1> <hr/>
-	</div>  
-		<a href="restaurant-home.html">Home</a>
-		<a href="restaurant-menu.html">Menu</a>
-		<a href="restaurant-contact.html">Contact Us</a> <hr/>
+<body>
+	
 
-	<div align="center">
+	<header> 
+	  <h1>Molecular</h1> <hr/>
+			<nav>
+				<a href="restaurant-home.html">Home</a>
+				<a href="restaurant-menu.html">Menu</a>
+				<a href="restaurant-contact.html">Contact Us</a> <hr/>
+			</nav>	
+	</header>
+
+		<div>
 		<form action="fakepage.html" method="POST">
 			Name:<input type="text" name="name"/> <br/> <br/>
 			Email:<input type="text" name="email"/> <br/> <br/>
@@ -24,18 +39,20 @@
 			</select> <br/>
 			<div>Additional Information:</div>	 <textarea name="additional information" rows="5"> </textarea> <br/>
 			Have you been to the restaurant?<input type="radio" name="answer" Value="no" checked/>no
-																			<input type="radio" name="answer" value="yes"/>Yes<br/>
-			Best days to contact you:<input type="checkbox" name="day" value="monday"/>M
-									 <input type="checkbox" name="day" value-"tuesday"/>T	
-									 <input type="checkbox" name="day" value="wednesday"/>W
-									 <input type="checkbox" name="day" value ="thursday"/>Th	
-								     <input type="checkbox" name="day" value="friday"/>F <br/>
+										    <input type="radio" name="answer" value="yes"/>Yes<br/>
+			Best days to contact you:<input type="checkbox" name="day" value="Monday"/>M
+									 <input type="checkbox" name="day" value-"Tuesday"/>T	
+									 <input type="checkbox" name="day" value="Wednesday"/>W
+									 <input type="checkbox" name="day" value ="Thursday"/>Th	
+								     <input type="checkbox" name="day" value="Friday"/>F <br/>
 									 <input type="submit" value="Send Request"/>
+		</form>							 
 	</div>															
 	<hr/>
-	<div align="center">
+	
+	<div>
 		<footer>
-		 2800 MAdison St, Louisville, Kentucky, 40230<br/>
+		 2800 Madison St, Louisville, Kentucky, 40230<br/>
       Phone:(560)-222-2354
 		</footer>
     </div>

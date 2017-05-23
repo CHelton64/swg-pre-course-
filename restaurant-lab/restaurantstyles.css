@@ -1,0 +1,21 @@
+header {
+    
+    background-color:lime;
+    border: 6px; 
+    border-style:dashed; 
+    border-color:darkslategray;
+    text-align:center;
+    color:darkslategray
+}
+
+
+
+footer{
+background-color:lime;
+border:6px;
+border-style:dashed;
+border-color:darkslategray;
+text-align:center;
+color:darkslategray
+}
+

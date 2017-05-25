@@ -3,4 +3,13 @@ h1 {
     color:green
 }
 
-
+table {
+    width:100%
+}
+ 
+ table, th, td, tr { 
+     border:2px solid purple;
+     text-align:center;
+ }
+ 
+ 

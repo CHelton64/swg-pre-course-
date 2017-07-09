@@ -1,61 +1,116 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
-<head>
-  <title>Contact Us</title>
-	<link rel="stylesheet" href="restaurantstyles.css"/>
-	<style>
-		div {
-			align:center;
-			text-align:center
-		}
- form{
-	 font-weight:bold; 
-	 color:darkslateblue
- }
-	</style>
-</head>
-<body>
-	
+	<head>
+		<title>Molecular-Contact-Us</title>
+		<link href="restaurant-stylesheet.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		
+		<style>
+			fieldset {
+    		text-align: center;
+    		border: none;
+			}
+			select {
+				margin-right: 80px;
+				width: 173px;
+				height: 21px;
+			}
+			textarea {
+				margin-right: 109px;
+				width: 167px;
+				height: 100px;
+				vertical-align: top;
+			}
+			fieldset {
+				margin-right:
+			}
+			label {
+				font-weight: bold;
+			}
+		</style>
 
-	<header> 
-	  <h1>Molecular</h1> <hr/>
+	</head>
+	<body>
+
+		<!-- Universal Header -->
+		<header>
+
+			<h1>Molecular</h1>
+			<hr/>
+
 			<nav>
-				<a href="restaurant-home.html">Home</a>
-				<a href="restaurant-menu.html">Menu</a>
-				<a href="restaurant-contact.html">Contact Us</a> <hr/>
-			</nav>	
-	</header>
+				<ul>
+					<li><a href="restaurant-home.html">Home</a></li>
+					<li><a href="restaurant-menu.html">Menu</a></li>
+					<li><a href="restaurant-contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
 
-		<div>
-		<form action="fakepage.html" method="POST">
-			Name:<input type="text" name="name"/> <br/> <br/>
-			Email:<input type="text" name="email"/> <br/> <br/>
-			Phone:<input type="text" name="phone number"/> <br/><br/>
-			Reason for Inquiry:<select name="reason">
-			<option value="catering">Catering</option>
-			<option value="private party">Private Party</option>	
-			<option value="feedback">Feedback</option>
-			<option value="other">Other</option>
-			</select> <br/>
-			<div>Additional Information:</div>	 <textarea name="additional information" rows="5"> </textarea> <br/>
-			Have you been to the restaurant?<input type="radio" name="answer" Value="no" checked/>no
-										    <input type="radio" name="answer" value="yes"/>Yes<br/>
-			Best days to contact you:<input type="checkbox" name="day" value="Monday"/>M
-									 <input type="checkbox" name="day" value-"Tuesday"/>T	
-									 <input type="checkbox" name="day" value="Wednesday"/>W
-									 <input type="checkbox" name="day" value ="Thursday"/>Th	
-								     <input type="checkbox" name="day" value="Friday"/>F <br/>
-									 <input type="submit" value="Send Request"/>
-		</form>							 
-	</div>															
-	<hr/>
-	
-	<div>
+		</header>
+		<hr/>
+		<!-- Contact Form -->
+
+		<form action="blank" method="POST">
+
+			<fieldset>
+				<label>
+					Name: <input type="text" name="Name" placeholder="Name"/><br/><br/>
+					Email: <input type="email" name="email-address" placeholder="Email-Address"/><br/><br/>
+					Phone: <input type="tel" name="phone-number" placeholder="Phone-Number"/><br/>
+				</label>
+			</fieldset>
+
+			<fieldset>
+				<label>
+					Reason for inquiry: 
+					<select name="reason">
+						<option value="catering" selected>catering</option>
+						<option value="private-party">Private Party</option>
+						<option value="feedback">feedback</option>
+						<option value="other">Other</option>
+					</select><br/>
+				</label>	
+			</fieldset>
+
+			<fieldset>
+			 	<label>
+					Additional Information:
+			   	<textarea name="additional-info"> </textarea>
+			 	</label> 
+			</fieldset><br/>
+
+			<fieldset>
+				<label>
+					Have you been to the restaurant? 
+					<input type="radio" name="answer" value="no" checked/>No
+					<input type="radio" name="answer" value="yes"/>Yes
+				</label>	
+			</fieldset><br/>
+
+			<fieldset>
+				<label>
+					Best days to contact you:
+			  	<input type="checkbox" name="day" value="monday"/>M
+			 		<input type="checkbox" name="day"	value="teusday"/>T
+					<input type="checkbox" name="day"	value="wednesday"/>W
+					<input type="checkbox" name="day"	value="thursday"/>TH
+			  	<input type="checkbox" name="day" value="friday"/>F
+				</label>
+			</fieldset><br/>
+
+			<fieldset>
+				<label>
+					<input type="submit" name="submit" value="Send Request"/>
+				</label>
+			</fieldset>
+
+		</form>
+		<hr/>
 		<footer>
-		 2800 Madison St, Louisville, Kentucky, 40230<br/>
+      2800 Madison St, Louisville, Kentucky, 40230<br/>
       Phone:(560)-222-2354
-		</footer>
-    </div>
+      </footer>
+
+	</body>
 	
-</body>
-</html>  
+</html> 

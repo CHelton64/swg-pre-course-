@@ -1,0 +1,60 @@
+body {
+    color: lime;
+    background-color: black;
+}
+div {
+    background-image: url("blink-182-album-cover.jpg");
+    background-repeat: none;
+    height: 280px;
+    width: 500px;
+    margin: 0 auto;
+}
+h1, .mem {
+    font-family: 'Permanent Marker', cursive;
+}
+ul {
+    font-style: italic;
+}
+
+/*
+  =========================
+  Links
+  =========================
+*/
+a {
+    display: block;
+    text-decoration: none;
+    width: 100px;
+    margin: 0 auto;
+}  
+a:hover {
+    text-decoration: underline;
+    background-color: purple;
+    color: lime;
+}
+
+/*
+  =========================
+  table
+  =========================
+*/  
+table {
+    width: 90%;
+    margin: 0 auto;
+}
+table, th, td { 
+    border: 1px solid lime;
+    border-collapse: collapse; 
+    text-align: center;
+}
+
+th {
+    background-color: purple;
+}
+tr td {
+    background-color: #454343;
+    font-style: italic;
+}
+caption {
+    font-size: large;
+}

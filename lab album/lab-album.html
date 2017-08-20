@@ -1,21 +1,21 @@
 <html>
     <head>
         <title>Lab-Album</title>
-				<link rel="stylesheet" href="album-stylesheet.css"/>
-				<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-				<style>
-					img {
-						width: 450px;						
-					}
-				</style>
+				
+				<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet"/>
+				<link rel="stylesheet" href="bootstrap.css"/>
+				<link rel="stylesheet" href="album-stylesheet.css"/>	
+				
     </head>
     <body>
-				<div></div>
+		
+	          <img src="blink-182-album-cover.jpg" class="blinkimg img-circle"/>	
+	
        
 			  <h1>California</h1>
-        <a href="http://www.blink182.com/"><h2>Blink 182</h2></a>
+        <a class="website" href="http://www.blink182.com/"><h2 class="website">Blink 182</h2></a>
         <h3>Release Date</h3><hr/>
-		
+       
         
 				<!-- Band Info -->
 
@@ -30,14 +30,17 @@
 
 
 			<!-- Table -->
-
-			<table>
+			<div class="container">
+			<table class="table table-responsive table-striped">
 				<caption>Tracks</caption>
+			 <thead>	
 				<tr>
 					<th>Track #</th>
 					<th>Track Title</th>
 					<th>Track Length</th>
 				</tr>
+			 </thead>
+			 <tbody>
 				<tr>
 					<td>1</td>
 					<td>Cynical</td>
@@ -78,6 +81,8 @@
 					<td>Home is Such a Lonely Place</td>
 					<td>3:21</td>
 				</tr>
+			 </tbody>
 			</table>
+			</div>
     </body>
 </html>

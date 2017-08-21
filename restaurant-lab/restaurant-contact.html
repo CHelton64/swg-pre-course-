@@ -1,0 +1,128 @@
+<!Doctype html>
+<html>
+	<head>
+		<title>Molecular-Contact-Us</title>
+		<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+			 integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+
+			<link href="restaurant-stylesheet.css" rel="stylesheet" type="text/css"/>
+		<link href="https://fonts.googleapis.com/css?family=Exo" rel="stylesheet">
+		
+		<style>
+			fieldset {
+				text-align: center;
+				border: none;
+				font-size: 16px;
+			}
+			select {
+				margin-right: 80px;
+				width: 199px;
+				height: 28px;
+			}
+			textarea {
+				margin-right: 61px;
+				width: 199px;
+				height: 100px;
+				vertical-align: top;
+			}
+			label {
+				font-weight: bold;
+			}
+			#drp{
+				margin: 20px 0 20px 74px
+			}
+		</style>
+
+	</head>
+	<body>
+
+		<!-- Universal Header -->
+		<header>
+
+			<h1>Molecular</h1>
+			<hr/>
+
+			<nav>
+				<ul class="nav nav-tabs">
+					<li><a class="glyphicon glyphicon-home" href="restaurant-home.html"></a></li>
+					<li><a href="restaurant-menu.html">Menu</a></li>
+					<li><a href="restaurant-contact.html">Contact Us</a></li>
+				</ul>
+			</nav>
+
+		</header>
+		<hr/>
+		<!-- Contact Form -->
+		 
+		
+		<form action="blank" method="POST" class="col-xs-12">
+
+			<fieldset>
+					<label for="name">Name:</label>
+					<input type="text" name="Name" id="name" placeholder="Name"/><br/><br/>
+					<label for="email-address">Email:</label>
+					<input type="email" name="email-address" id="email-address" placeholder="Email-Address"/><br/><br/>
+					<label for="phone-number">Phone:</label>	
+					<input type="tel" name="phone-number" id="phone-number" placeholder="Phone-Number"/><br/>
+			</fieldset>
+
+			<fieldset id="drp">
+					<label for="reason">Reason</label> 
+					<select name="reason" id="reason">
+						<option value="catering" selected>catering</option>
+						<option value="private-party">Private Party</option>
+						<option value="feedback">feedback</option>
+						<option value="other">Other</option>
+					</select><br/>	
+			</fieldset>
+
+			<fieldset>
+					<label for="additional-info">Additional Info</label>
+				 	<textarea name="additional-info" id="additional-info"> </textarea>
+			 	</label> 
+			</fieldset><br/>
+
+			<fieldset>
+				<label>
+					Have you been to the restaurant? <br/>
+					<label for="no">No</label>
+					<input type="radio" name="answer" id="no" value="no" checked/>
+					<label for="yes">Yes</label>
+					<input type="radio" name="answer" id="yes" value="yes"/>
+				</label>	
+			</fieldset><br/>
+
+			<fieldset>
+					Best days to contact you:
+				<label for="monday">M</label>	
+				<input type="checkbox" name="day" id="monday" value="monday"/>
+				<label for="teusday">T</label>		
+				<input type="checkbox" name="day" id="teusday"	value="teusday"/>
+				<label for="wednesday">W</label>	  
+				<input type="checkbox" name="day" id="wednesday" value="wednesday"/>
+				<label for="thursday">TH</label>
+				<input type="checkbox" name="day" id="thursday"	value="thursday"/>
+				<label for="friday">F</label>
+					<input type="checkbox" name="day" id="friday" value="friday"/>
+			</fieldset><br/>
+
+			<fieldset>
+					<input type="submit" name="submit" value="Send Request"/>
+			</fieldset>
+
+		</form>
+			
+		<hr/>
+		<footer>
+			2800 Madison St, Louisville, Kentucky, 40230<br/>
+			Phone:(560)-222-2354
+			</footer>
+			<noscript style="color: red">This site is best viewed with javascript enabled</noscript>
+	</body>
+	
+</html> 
